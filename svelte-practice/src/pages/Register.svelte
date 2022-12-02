@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import axios from "axios";
     const API_PORT = import.meta.env.VITE_BACKEND_API;
     console.log(API_PORT)
@@ -26,7 +28,7 @@ async function submitHandler(e) {
     <div class="text-center">
     <img src="/images/logo-nmims.png" height="80" alt="Logo"/>
     </div>
-    <!-- <h3 class="text-center text-white">Login</h3> -->
+    <h3 class="text-center text-white">Login</h3>
     <form class="login-form form text-center" on:submit|preventDefault={submitHandler}>
         <div class="input-group">
             <input type="text" class="form-control" name="username" placeholder="Username">
