@@ -2,6 +2,7 @@
 	import { Link } from 'svelte-routing';
     import axios from "axios";
     import Home from './Home.svelte';
+    // import Img from '../pages';
     // @ts-ignore
     const API_PORT = import.meta.env.VITE_BACKEND_API;
     console.log(API_PORT)
@@ -19,7 +20,10 @@ async function submitHandler(e) {
 
 
 }
+
+
 </script>
+
 
 <style>
     *,:after,:before{box-sizing:border-box}
@@ -43,6 +47,10 @@ async function submitHandler(e) {
         height: 100vh;
         width: 40%;
         display: grid;
+    }
+
+    .login-wrap{
+        background-color: white;
     }
     .login-html{
     width:100%;
@@ -192,8 +200,9 @@ async function submitHandler(e) {
     .foot-lnk{
     text-align:center;
     }
+
     </style>
-    
+
     <div class="loginForm">
     {#if !isRegistered}
     <div class="login-wrap">

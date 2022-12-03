@@ -27,7 +27,13 @@ module.exports = {
         console.log("error")
      },
 
+ 
 
+    getAddUserPage: async (req, res) => {
+        
+        res.json({status: 200 , message: `registration success inserted rows ${result[0].rows}`});
+             
+     },
 
 
          // registerUser: async (req, res) => {
